@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-03DNGPLJXS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-03DNGPLJXS');
+</script>
+
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpg" href="Imagini/favicon%20(1).ico"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/Movie.css" type="text/css" rel="stylesheet">
+    <link href="css/Style-Home-page.css" type="text/css" rel="stylesheet">
+    <link href="css/Comment.css" type="text/css"  rel="stylesheet">
+    
+
+</head>
+<body>
+        <div id="wrapper">
+            <div class="navbar" id="myTopnav">
+            <a href="index.html" class="logo1"><img class="logo1" src="../Pesteri/Imagini/8749_1411738635_thecave3.jpg"></a>
+            <nav id="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Pesteri-Romania.html">Peșteri România</a></li>
+                    <li><a href="Lume-Pesteri.html">Peșteri Celebre</a></li>
+                    <li><a href="Informatii.html">Informații</a></li>
+                    <li><a href="Comment.html" class="current">Contact</a></li>
+                    <a href="javascript:void(0);" class="icon" onclick="menuFunction();topFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </ul>    
+            </nav></div>
+<h2 id=scris>Contactează-ne</h2>
+<p id=scris1>Părerea dumneavoastră ne ajută mereu, trimite un mesaj cu sfaturile, criticile sau recomandările dumneavoastra, iar noi le vom lua in considerare cât mai repede posibil.
+<br>De asemenea, daca aveti orice fel de intrebare, nu ezitati sa ne contactati.
+</p>
+<div class="container">
+    <form action="mailto:CavesMaster@gmail.com" method="post" id="Contact">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Prenume</label> 
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="firstname" pattern="[A-Za-z]{2,50}" placeholder="Prenumele.." title="Doar litere"> 
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Nume</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" pattern="[A-Za-z]{2,50}" placeholder="Numele.." title="Doar litere">
+      </div>
+    </div>
+<table>
+    <div class ="row">
+        <div class="col-25">
+        <label for="numartelefon">Telefon</label>
+      </div>
+        <div class="col-75">
+        <input type="text" id="numartelefon" name="phone" pattern="[0-9]{10,10}" placeholder="Numarul de telefon.." title="Numar de telefon valid">
+      </div>
+        </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Tara</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Romania">Romania</option>
+          <option value="Canada">Canada</option>
+          <option value="Usa">USA</option>
+          <option value="Franta">Franta</option>
+          <option value="Italia">Italia</option>
+          <option value="Germania">Germania</option>
+          <option value="Anglia">Anglia</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subiect</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Mesajul dumneavostra.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+     <input type="submit" value="Trimite" >
+      <p id="demo"></p>
+      </div>
+    </form>
+      <button onclick="helpFunction()" id="myBtnHelp"><i class="material-icons">help</i> </button>
+
+      <br><label id="labelh" for="fname">Pentru tipul de date ce trebuie introduse, tine-ti mouse-ul deasupra campului, fara sa apasati pe acesta.</label> 
+      
+   </table>
+</div>
+
+            <h2 id=scris>Ne gasiti si pe retele de socializare</h2>
+            <div class="button">              
+                
+                <a href="https://www.facebook.com"> <img class="buton" src="Imagini/facebook.png"> </a>
+                <a href="https://www.instagram.com"> <img class="buton" src="Imagini/instagram.png"> </a>
+                <a href="https://www.youtube.com"> <img class="buton1" src="Imagini/YouTube.png"> </a>
+                </div>
+                
+</div>
+
+<script>
+    function myFunction() {
+        var person = prompt("Vă rugăm să introduceți mail ul", "exemple@mailprovider.com");
+        if (person != null) {
+            document.getElementById("demo").innerHTML =
+            "Bună ziua ! Mesajul dumneavoastră a fost primit, un răspuns va fi trimis pe mail ul dumneavoastră ~ " + person + " ~ cât mai curând posibil. Vă mulțumim!";
+        }
+    }           
+    </script>
+  
+<button onclick="colorpickFunction()" id="myBtnC" title="Change Colors">&#9775;</button>
+        <table id="colorpick">
+            <tr>
+                <td>Schimba culoarea wrapper ului si a navigatiei</td>
+            <td><input type="color" id="colorWellwrap" title="Schimba culoarea wrapper ului si a navigatiei - "></td>
+            </tr>
+            <tr>
+            <td>Schimba culoarea background ului</td>
+            <td><input type="color" id="colorWellbackground" title="Schimba culoarea background ului"></td>
+            </tr>
+            <tr>
+            <td>Schimba culoarea text ului</td>
+            <td><input type="color" id="colorWelltext" title="Schimba culoarea text ului"></td>
+            </tr>       
+        </table>
+        
+       
+        <!-- <a href="Contact.html"><button id="myBtnH" title="Help">&#63;</button></a> -->
+        <button onclick="topFunction()" id="myBtnU" title="Go to top">&#x25B2;</button>
+        <button onclick="bottomFunction()" id="myBtnD" title="Go to bottom">&#x25BC;</button>
+        <button onclick="helpFunction()" id="myBtnHelp" title="Go to bottom"></button>
+
+
+       <script>
+                    //Get the button:
+            mybuttonU = document.getElementById("myBtnU");
+            mybuttonD = document.getElementById("myBtnD");
+            mybuttonHelp = document.getElementById("labelh");
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybuttonU.style.display = "block";
+                    mybuttonD.style.display = "block";
+                } else {
+                    mybuttonU.style.display = "none";
+                    mybuttonD.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+            // When the user clicks on the button, scroll to the bottom of the document
+            function bottomFunction() {
+                document.body.scrollTop = document.body.scrollHeight;
+                document.documentElement.scrollTop = document.documentElement.scrollHeight;
+            }
+            var no="0";
+            function helpFunction()
+            {
+                if (no=="0")
+                {
+                    mybuttonHelp.style.display = "block";
+                    no="1";
+                }
+                else{
+                    mybuttonHelp.style.display = "none";
+                    no="0";
+                }
+                
+            }
+
+            function searchFunction() {
+                let input = document.getElementById('myInput').value;
+                input=input.toLowerCase();
+                let z = document.getElementsByClassName('search');                
+                
+                for(i=0;i<z.length;i++){
+                    a=z[i].getElementsByTagName("div")[0];
+                    if(!a.innerHTML.toLowerCase().includes(input)) {
+                        z[i].style.display="none";
+                        }
+                    else{
+                        z[i].style.display="";                        
+                    }
+                }
+            }
+            
+            var colorWellwrap,colorWellbackground,colorWelltext;
+            window.addEventListener("load",startup,false);
+            
+            function startup() {
+                colorWellwrap = document.querySelector("#colorWellwrap");
+                colorWellbackground = document.querySelector("#colorWellbackground");
+                colorWelltext = document.querySelector("#colorWelltext");
+                
+                colorWellwrap.addEventListener("input",updateFirstwrap,false);
+                //colorWellwrap.addEventListener("change",updateAllwrap,false);
+                colorWellbackground.addEventListener("input",updateFirstbackground,false);
+                colorWelltext.addEventListener("input",updateFirsttext,false);
+                  
+                colorWellwrap.select();
+                colorWellbackground.select();
+                colorWelltext.select();
+            }
+            
+            function updateFirsttext(event){
+                document.querySelectorAll("p").forEach(function(p){
+                    p.style.color=event.target.value;
+                })
+            }
+            
+            function updateFirstwrap(event){
+                document.getElementById("wrapper").style.backgroundColor = event.target.value;
+                document.getElementById("main-navigation").style.backgroundColor = event.target.value;
+            }
+            
+            function updateFirstbackground(event){
+                document.body.style.background = event.target.value;
+            }
+            
+            var on="0";
+            function colorpickFunction(){
+                var x = document.getElementById("colorpick");
+                if(on=="0")
+                    {
+                        x.style.display = "block";
+                        on="1";
+                    }
+                else
+                    {
+                    x.style.display = "none"; 
+                        on="0";
+                    }
+            }
+
+            function menuFunction(){
+                var x = document.getElementById("myTopnav");
+                if(x.className === "navbar"){
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+                }
+            
+           contact = document.getElementById("Contact");
+           cerere = document.getElementById("Cerere");
+           var contacton="1";
+           var cerereon="0";
+           function Clr()
+           {
+           if (contacton=="1")
+           {
+               document.getElementById("btn1").style.color="#FF0000";
+               document.getElementById("btn2").style.color="#fff";
+           }
+           else if(cerereon=="1")
+           {
+               document.getElementById("btn2").style.color="#FF0000";
+               document.getElementById("btn1").style.color="#fff";
+           }
+           }
+           Clr();
+           
+           function ContactFunction(){
+               if(cerereon=="1")
+                   {
+                       cerere.style.display="none";
+                       cerereon="0";
+                       Clr();
+                   }
+                   
+               if(contacton=="0")
+                   {
+                       contact.style.display="block"; 
+                       contacton="1";
+                       Clr();
+                   }
+           }
+           
+           function CerereFunction(){
+               if(contacton=="1")
+                   {
+                       contact.style.display="none";
+                       contacton="0";
+                       Clr();
+                   }
+               if(cerereon=="0")
+                   {
+                       cerere.style.display="block";
+                       cerereon="1";
+                       Clr();
+                   }
+           }
+
+        </script>
+
+</body>
+</html>

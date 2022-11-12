@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+#labelh {
+    padding: 12px 12px 12px 0;
+    display: none;
+}
+
+input[type=submit] {
+    background-color: skyblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: orangered;
+}
+
+.container {
+    border-radius: 5px;
+    background-color:RGB(204,204,204);
+    padding: 20px;
+    width: 80%;
+    margin: 2% 10%;
+    
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-help {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    #scris{
+        text-align: center;
+        font-size: 200%;
+    }
+    #scris1{
+        text-align: center;
+        font-size: 120%;
+        padding: 20px;
+    }
+    #scris2{
+        text-align: left;
+        font-size: 140%;
+        padding: 0% 4% 0 5%;
+    }
+    #scris3{
+        text-align: left;
+        font-size: 100%;
+        padding: 2% 4% 4% 4%;
+    }
+    #scris4{
+        text-align: left;
+        font-size: 100%;
+        padding: 2% 4% 4% 4%;
+    }
+#Cerere{
+        display:none;
+    }
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+img.buton{
+    display: inline-block;
+    width: 8%;
+    height: 5%;
+    margin-bottom: 50px;
+    margin-left:17%
+    
+}
+img.buton1{
+    display: inline-block;
+    width: 13%;
+    height: 7%;
+    margin-bottom: 50px;
+    margin-left:17%
+    
+}

@@ -1,0 +1,285 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 25px ;
+    font-family: arial;
+    background-image: url(../Imagini/amazing-caves-15-2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+    width: 75%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#main-navigation{
+    background: #181818;
+    padding: 10px;
+}
+
+.navbar{
+    position: sticky;
+    overflow: hidden;
+    top:0;
+    z-index: 99;
+    background-color: #181818;
+}
+
+#main-navigation ul{
+    text-align: right;
+    list-style-type: none;
+    margin-right: 10px;
+}
+#main-navigation a:hover{
+  border: 1px solid;
+  box-shadow: inset 0 0 20px #fff, 0 0 20px #FF0000;
+  outline-color: #FF0000;
+  outline-offset: 5px;
+  text-shadow: 1px 1px 2px #FF0000; 
+  color:red;
+} 
+
+
+#main-navigation li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#main-navigation a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 6px;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#main-navigation a.current{
+    background: #181818;
+    border-radius: 4px;
+}
+
+#main-navigation a:active{
+    color:black;
+}
+
+#lead-banner img{
+    width: 100%;
+}
+
+#shop{
+    margin: 30px 0;
+    text-align: center;
+}
+
+#shop h2.product-name{
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#shop span.price{
+    font-size: 58px;
+    display: block;
+}
+
+#shop a.watch-now{
+    display: block;
+    color: #181818;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 0px;
+    border: 2px solid #8f746c;
+    width: 210px;
+    margin: 20px auto;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#shop a.watch-now:hover{
+  border: 1px solid;
+  box-shadow: inset 0 0 20px #fff, 0 0 20px #FF0000;
+  outline-color: #FF0000;
+  outline-offset: 5px;
+  text-shadow: 1px 1px 2px #FF0000; 
+  color:red;
+  background-color: #181818;
+}
+
+#footer-banner img{
+    width: 100%;
+}
+
+h2{
+    margin: 20px 40px ;
+    font-size: 20px;
+    text-align: center;
+}
+h1.MM{
+    font-size: 45px;
+}
+img.product-image{
+    width: 80%;
+    height:350px;
+    text-align: center;
+    display:initial;
+    padding: 0px 0px 20px 0px;
+}
+iframe{
+    width: 80%;
+
+}
+.logo1{
+    height: 40px;
+    width: 150px;
+    float: left;
+    margin-top: 1%;
+    margin-left:3%; 
+}
+
+img.logo1:hover{
+    box-shadow: 0px 0px 30px 10px #FFFFFF
+}
+#myBtnU, #myBtnD, #myBtnH, #myBtnC {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 130px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtnD {
+    bottom: 75px;
+}
+
+#myBtnH {
+    bottom: 20px;
+    width: 47px;
+    display:block;
+}
+
+#myBtnC {
+    bottom: 20px;
+    width: 47px;
+    left: 30px;
+    display:block;
+}
+
+#myBtnU:hover, #myBtnD:hover, #myBtnH:hover, #myBtnC:hover {
+    background-color: darkred; /* Add a dark-grey background on hover */
+}
+.navbar .icon{
+    display: none;
+}
+
+#colorpick td{
+    color: white;
+    background-color: black;      
+}
+#colorpick{
+    position:fixed;
+    display:none;
+    bottom:100px;
+    left:30px;  
+    border:1px;
+    border-style: solid;
+    border-color: ghostwhite;
+    background-color: black;
+}
+.colorup{
+    display:block;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar a {display:none;}
+    .navbar a.icon{
+        float: left;
+        display:block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar.responsive {
+        position:relative;
+        width: 100%;
+    }
+    .navbar.responsive a.icon{
+        position: absolute;
+        left:30px;
+        top:55px;
+    }
+    .navbar.responsive a{
+        float: none;
+        display:block;
+        text-align: left;
+        margin-left:20px;
+        margin-right: 225px;
+        margin-top: 10px;
+    }
+    #main-navigation ul{
+        text-align: left;
+    } 
+    .logo1{
+        margin-top: -5px;
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .navbar.responsive {
+        position:relative;
+        width: 100%;
+    }
+    .navbar.responsive a.icon{
+        position: absolute;
+        left:30px;
+        top:55px;
+    }
+    .navbar.responsive a{
+        float: none;
+        display:block;
+        text-align: left;
+        margin-left:20px;
+        margin-right: 60px;
+        margin-top: 10px;
+    }
+    #main-navigation ul{
+        text-align: left;
+    }
+    .logo1{
+        margin-top: 0px;
+        margin-left: 55px;
+    }
+    #colorpick{
+        bottom:200px;
+    }
+}
+
+
+
+
+
+

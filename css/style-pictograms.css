@@ -1,0 +1,56 @@
+body{
+    margin: 25px ;
+    font-family: arial;
+    background-image: url(../Imagini/Pestera-Scarisoara/Poza5.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wrapper{
+    width: 75%;
+    margin: 0 auto;
+    background-color: lightgray;
+    
+}
+
+#images{
+    text-align:center;
+    margin:50px auto;    
+}
+#images a{
+    margin:10px auto;
+    display:inline-block;
+    text-decoration:none;
+    color:black;
+}
+
+#images a:hover{
+    border: 1px solid;
+  box-shadow: inset 0 0 20px #fff, 0 0 20px #FF0000;
+  outline-color: #FF0000;
+  outline-offset: 5px;
+  text-shadow: 1px 1px 2px #FF0000; 
+  color:red;
+}
+
+
+img.pictograme {
+  height: 150px;
+  width: 125px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+img.pictograme:hover {
+  width: 170px;
+  height: 200px;
+}
+.caption{
+   background-color:;
+}
+
